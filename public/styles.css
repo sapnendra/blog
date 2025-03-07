@@ -1,0 +1,194 @@
+/* public/styles.css */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f9ff, #cbebff);
+  color: #333;
+  position: relative;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fefefe;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+  height: 100vh;
+}
+
+/* Card Styles for Posts */
+.post {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #ff7e5f;
+  font-size: 1.75rem;
+}
+
+.post p {
+  line-height: 1.6;
+}
+
+/* Date Styling */
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.post-content {
+  font-size: 1.2rem;
+}
+
+/* Actions Section in Post Cards */
+.actions {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.actions a {
+  margin-right: 1rem;
+  color: #ff7e5f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+.actions form {
+  display: inline;
+}
+
+.actions button {
+  background: #ff7e5f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.actions button:hover {
+  background: #feb47b;
+}
+
+/* Form Styles */
+form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Footer Styles */
+footer {
+  background: #ff7e5f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+}

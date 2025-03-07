@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Create New Post</h1>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+  </header>
+  <main>
+    <form action="/posts" method="POST">
+      <div>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="Title of the posts">
+      </div>
+      <div>
+        <label for="image">Blog web url:</label>
+        <input type="text" id="image" name="image" placeholder="https://example.png">
+      </div>
+      <div>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="10" placeholder="Write your blog here"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> My Blog</p>
+  </footer>
+</body>
+</html>
